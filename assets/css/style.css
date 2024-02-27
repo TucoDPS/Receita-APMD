@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --amarelo: #FFC857;
+    --laranja: #E9724C;
+    --vermelho: #C5283D;
+    --preto: #1B1B1B;
+    --branco: #ECECEC;
+    --fundo_receitas: #3C3C3C;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.fundo{
+    background-image: url("../images/fundo_food.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    filter: blur(2px) brightness(0.5);
+    transform: scale(1.1);
+}
+
+
+
+.titulo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: var(--branco);
+}
+.melhores__strong {
+    font-family: "Poppins";
+    font-weight: 275;
+    color: var(--branco);
+}
+.receita__strong {
+    font-family: "Poppins";
+    font-weight: 275;
+    color: var(--amarelo);
+}
+
+button {
+    position: absolute;
+    font-size: 24px;
+    font-family: "Poppins";
+    font-weight: 400;
+    top: 70%;
+    left: 50%;
+    color: var(--preto);
+    background-color: var(--amarelo);
+    transform: translate(-50%,-50%);
+    padding: 20px 70px;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: var(--laranja);
+    color: var(--branco);
+    transition: ease-in 255ms
+}
+
+button:active {
+    background-color: var(--vermelho);
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+.receitas__cabecalho {
+    background-color: var(--fundo_receitas);
+    padding: 3%;
+}
+
+.receitas__titulo {
+    text-align: center;
+    font-size: 96px;
+}
+
+.box__receita{
+    position: absolute;
+    left: 3%;
+    top: 105%;
+    width: 302px; 
+    height: 271px; 
+    border-radius: 22px;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    background: #D9D9D9;
+}
+
+.box__receita h2 {
+    font-family: "Poppins";
+    color: var(--fundo_receitas);
+    position: absolute;
+    bottom: -40px; 
+    width: 100%; 
+    text-align: center; 
+}
+.box__receita a {
+    text-decoration: none;
+    color: inherit;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end;
+    align-items: center; 
+    display: block;
+}
+
+.box__receita img {
+    width: 302px;
+    height: 271px;
+    object-fit: cover;
+    border-radius:  22px
+}
