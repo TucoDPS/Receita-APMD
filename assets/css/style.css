@@ -10,32 +10,18 @@
     --fundo_receitas: #3C3C3C;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    position: relative;
-    overflow: hidden;
-}
-
-
-.fundo{
-    background-image: url("../images/fundo_food.jpg");
-    background-repeat: no-repeat;
+header::before{
+    content: "";
+    top: 0;
+    left: 0;
+    background-image: url("../images/fundo_food.png");
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
     height: 100vh;
-    width: 100%;
-    position: relative;
-    z-index: -1;
-    filter: blur(2px) brightness(0.5);
-    transform: scale(1.1);
+    width: 100vw;
+    display: block;
+    position: absolute;
+    z-index: -10;
 }
-
-
 
 .titulo{
     position: absolute;
@@ -45,6 +31,9 @@ body{
     text-align: center;
     transform: translate(-50%, -50%);
     color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .melhores__strong {
     font-family: "Poppins";
@@ -96,13 +85,13 @@ button:active {
 .receitas__titulo {
     text-align: center;
     font-size: 96px;
+    
 }
 
 .box__receita{
-    position: absolute;
     left: 3%;
     top: 105%;
-    width: 302px; 
+    width: 300px; 
     height: 271px; 
     border-radius: 22px;
     margin: 20px;
@@ -116,7 +105,7 @@ button:active {
     font-family: "Poppins";
     color: var(--fundo_receitas);
     position: absolute;
-    bottom: -40px; 
+    bottom: -53px; 
     width: 100%; 
     text-align: center; 
 }
@@ -131,7 +120,7 @@ button:active {
 }
 
 .box__receita img {
-    width: 302px;
+    width: 300px;
     height: 271px;
     object-fit: cover;
     border-radius:  22px
