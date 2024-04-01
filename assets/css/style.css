@@ -10,7 +10,7 @@
     --fundo_receitas: #3C3C3C;
 }
 
-header::before{
+header{
     content: "";
     top: 0;
     left: 0;
@@ -124,4 +124,54 @@ button:active {
     height: 271px;
     object-fit: cover;
     border-radius:  22px
+}
+
+.receita__nome{
+ color: var(--amarelo);
+ background-color: var(--fundo_receitas);
+ padding: 1%;
+ text-align: center;
+ font-family: "Poppins";
+ font-size: 48px;
+}
+
+.slider_pessoas{
+color: var(--amarelo); 
+background-color: var(--fundo_receitas);
+text-align: center;
+font-family: "Poppins";
+}
+.img__receita{
+    width: 400px; 
+    height: 300px; 
+    border-radius: 22px;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    background: #D9D9D9;
+}
+.img__receita img {
+    width: 400px; 
+    height: 300px; 
+    object-fit: cover;
+    border-radius:  22px
+}
+
+.receita__ingredientes{ 
+    color: var(--preto); 
+    font-family: "Poppins";
+}
+
+.receita__preparo{
+    color: var(--preto);
+    font-family: "Poppins";
+}
+
+.footer__receita__pag{
+    text-align: center;
+    color: var(--branco);
+    font-family: "Poppins";
+    padding: 1%;
+    background-color: var(--fundo_receitas);
 }

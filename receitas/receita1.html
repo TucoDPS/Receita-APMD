@@ -1,11 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hambúrguer</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/script.js" defer></script>
 </head>
 <body>
-    
+    <div class="receita__nome">
+        <h1>Hambúrguer</h1>
+    </div>
+
+    <div class="slider_pessoas">
+    <label for="pessoas">Pessoas</label>
+    <input type="range" min="1" max="12" id="pessoas" value="1">
+    <span id="valor-pessoas">1</span> 
+    </div>
+    <div class="receita__ingredientes">
+        <main>
+            <section> 
+                <div class="img__receita">
+                    <img src="../assets/images/receita-1.jpg" alt="Hambúrguer">
+                </div> 
+                <h2>Ingredientes</h2>
+                <ul id="ingredientes">
+                </ul>
+            </section>
+        </main>
+    </div>
+    <div class="receita__preparo">
+        <section>
+            <h2>Modo de Preparo</h2>
+            <ol>
+                <li>Em uma tigela, misture a carne moída, a cebola, o alho, o sal e a pimenta.</li>
+                <li>Modele a carne em formato de hambúrguer.</li>
+                <li>Em uma frigideira quente, grelhe o hambúrguer por 5-6 minutos de cada lado, ou até que estejam cozidos por dentro.</li>
+                <li>Enquanto o hambúrguer estiver grelhando, toste os pães de hambúrguer.</li>
+                <li>Monte os hambúrgueres colocando uma fatia de queijo sobre cada um e deixe derreter.</li>
+                <li>Coloque os hambúrgueres sobre os pães tostados, adicione a alface, o tomate, o ketchup e a mostarda.</li>
+                <li>Sirva quente e aproveite!</li>
+            </ol>
+        </section>
+    </div>
+    <footer class="footer__receita__pag">
+    <p>&copy; 2024 Melhores Receitas. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
