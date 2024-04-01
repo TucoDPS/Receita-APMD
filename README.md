@@ -1,4 +1,4 @@
 # APMD 
 
-Projeto em desenvolvimento para faculdade
+Projeto desenvolvido para faculdade
 
